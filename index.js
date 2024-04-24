@@ -1,5 +1,7 @@
 // TASK: import helper functions from utils
+import { getTasks, saveTasks, createNewTask, patchTask, putTask, deleteTask } from './utils/taskFunctions.js';
 // TASK: import initialData
+import { initialData } from './data/initialData.js';
 
 
 /*************************************************************************************************************************************************
@@ -15,6 +17,8 @@ function initializeData() {
     console.log('Data already exists in localStorage');
   }
 }
+
+initializeData();
 
 // TASK: Get elements from the DOM
 const elements = {
