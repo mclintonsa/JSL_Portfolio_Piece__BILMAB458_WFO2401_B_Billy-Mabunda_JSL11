@@ -22,10 +22,40 @@ initializeData();
 
 // TASK: Get elements from the DOM
 const elements = {
+  addNewTaskBtn: document.getElementById('add-new-task-btn'),
+  newTaskModalWindow: document.getElementById('new-task-modal-window'),
+  titleInput: document.getElementById('title-input'),
+  descInput: document.getElementById('desc-input'),
+  selectStatus: document.getElementById('select-status'),
+  createTaskBtn: document.getElementById('create-task-btn'),
+  cancelAddTaskBtn: document.getElementById('cancel-add-task-btn'),
+  columnDivs: document.querySelectorAll('.column-div'),
+  tasksContainers: document.querySelectorAll('.tasks-container'),
+  editBoardBtn: document.getElementById('edit-board-btn'),
+  editBoardDiv: document.getElementById('editBoardDiv'),
+  deleteBoardBtn: document.getElementById('deleteBoardBtn'),
+  headerBoardName: document.getElementById('header-board-name'),
+  boardsNavLinksDiv: document.getElementById('boards-nav-links-div'),
+  dropdownBtn: document.getElementById('dropdownBtn'),
+  dropDownIcon: document.getElementById('dropDownIcon'),
+  editTaskForm: document.getElementById('edit-task-form'),
+  editTaskTitleInput: document.getElementById('edit-task-title-input'),
+  editTaskDescInput: document.getElementById('edit-task-desc-input'),
+  editSelectStatus: document.getElementById('edit-select-status'),
+  saveTaskChangesBtn: document.getElementById('save-task-changes-btn'),
+  cancelEditBtn: document.getElementById('cancel-edit-btn'),
+  deleteTaskBtn: document.getElementById('delete-task-btn'),
+  filterDiv: document.getElementById('filterDiv'),
+  showSideBarBtn: document.getElementById('show-side-bar-btn'),
+  hideSideBarBtn: document.getElementById('hide-side-bar-btn'),
+  sideBarDiv: document.getElementById('side-bar-div'),
+  iconDark: document.getElementById('icon-dark'),
+  iconLight: document.getElementById('icon-light'),
+  switchTheme: document.getElementById('switch'),
+  editTaskModal: document.querySelector('.edit-task-modal-window'),
+};
 
-}
-
-let activeBoard = ""
+let activeBoard = "";
 
 // Extracts unique board names from tasks
 // TASK: FIX BUGS
