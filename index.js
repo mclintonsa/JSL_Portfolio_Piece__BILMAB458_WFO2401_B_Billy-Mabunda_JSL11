@@ -280,6 +280,14 @@ document.addEventListener('DOMContentLoaded', function() {
   init(); // init is called after the DOM is fully loaded
 });
 
+// Handler for saving task changes
+function saveChangesHandler() {
+  const saveChangesBtn = document.getElementById('save-task-changes-btn');
+  saveChangesBtn.addEventListener('click', () => {
+    saveTaskChanges(taskId);
+  });
+}
+
 // Get the button elements for saving changes and deleting the task
 const saveChangesBtn = document.getElementById('save-task-changes-btn');
 const deleteTaskBtn = document.getElementById('delete-task-btn');
